@@ -1,6 +1,6 @@
 Package: SpectralTAD
 Title: SpectralTAD: Hierarchical TAD detection using spectral clustering
-Version: 1.28.1
+Version: 1.28.2
 Authors@R: c(
     person(given = "Mikhail",
            family = "Dozmorov",
@@ -27,7 +27,6 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 Imports: 
     dplyr,
-    PRIMME,
     cluster,
     Matrix,
     parallel,
