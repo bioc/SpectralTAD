@@ -16,12 +16,6 @@
 
 get_eigs = function(mat, NEig = 2) {
 
-  # if (requireNamespace("PRIMME", quietly = TRUE)) {
-  #
-  #   Eigen = PRIMME::eigs_sym(mat, NEig = NEig)
-  #
-  # } else {
-
   full_eigen = eigen(mat, symmetric = TRUE)
 
   NEig = min(NEig, length(full_eigen$values))
@@ -30,8 +24,6 @@ get_eigs = function(mat, NEig = 2) {
 
   Eigen = list(values = full_eigen$values[ord],
                vectors = full_eigen$vectors[, ord, drop = FALSE])
-
-  # }
 
   return(Eigen)
 
